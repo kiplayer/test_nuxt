@@ -1,9 +1,9 @@
 <template>
   <section class="container">
+    <h2>Html Tag</h2>
     <div>
-      <nuxt-link to="/">[메인화면]</nuxt-link>
-    </div>
-    <div>
+      <AppLogo />
+      <p>Route Query ID : {{ $route.query.id }}</p>
       <sample-div title="title1" />
       <sample-div title="title2" />
       <sample-div title="title3" />
@@ -13,26 +13,26 @@
       <p>p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p</p>
       <span>span span span span span span span span span span span span span span span span</span>
       <ul>
-        <li>li</li>
-        <li>li</li>
-        <li>li</li>
-        <li>li</li>
-        <li>li</li>
+        <li>ul - li</li>
+        <li>ul - li</li>
+        <li>ul - li</li>
+        <li>ul - li</li>
+        <li>ul - li</li>
       </ul>
       <ol>
-        <li>li</li>
-        <li>li</li>
-        <li>li</li>
-        <li>li</li>
-        <li>li</li>
+        <li>ol - li</li>
+        <li>ol - li</li>
+        <li>ol - li</li>
+        <li>ol - li</li>
+        <li>ol - li</li>
       </ol>
       <dl>
-        <dt>dt</dt>
-        <dd>dd</dd>
-        <dt>dt</dt>
-        <dd>dd</dd>
-        <dt>dt</dt>
-        <dd>dd</dd>
+        <dt>dl - dt</dt>
+        <dd>dl - dd</dd>
+        <dt>dl - dt</dt>
+        <dd>dl - dd</dd>
+        <dt>dl - dt</dt>
+        <dd>dl - dd</dd>
       </dl>
       <form>
         <input type="text" id="" name="" placeholder="placeholder" value="" />
@@ -46,6 +46,7 @@
           <option value="option">option</option>
         </select>
         <textarea id="" name="">textarea</textarea>
+        <img src>
       </form>
     </div>
   </section>
@@ -63,7 +64,7 @@ export default {
 </script>
 
 <style>
-.container{margin:0 auto;width:800px;flex-direction: column;}
+.container{margin:0 auto;width:800px;}
 p{margin:10px 0;}
 /* li{float:left;} */
 input{width:100px;height:30px;}
