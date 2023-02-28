@@ -7,6 +7,7 @@
           <label for="inputId" class="required">아이디</label>
           <!-- required="true" -->
           <input type="text" id="inputId" v-model="form.inputId" placeholder="아이디를 입력해주세요." value="" />
+          Key Event : enter, tab, delete, esc, space, up, down, left, right 
         </li>
         <li>
           <label for="inputPw" class="required">비밀번호</label>
@@ -111,7 +112,7 @@ export default {
         return ;
       }
 
-      console.log(this.form);
+      alert(JSON.stringify(this.form));
       return false;
     }
   }
