@@ -21,14 +21,14 @@
         </li>
         <li>
           <label for="inputTitle" class="required">제목</label>
-          <input type="text" id="inputTitle" v-model="form.inputTitle" placeholder="제목를 입력해주세요." />
+          <input type="text" id="inputTitle" :style="{'width':'100%'}" v-model="form.inputTitle" placeholder="제목를 입력해주세요." />
         </li>
         <li>
           <label for="">텍스트박스</label>
           <textarea id="inputContent" v-model="form.inputContent" placeholder="내용를 입력해주세요."></textarea>
         </li>
       </ul>
-      <button type="submit">등록하기</button>
+      <button type="submit" class="btn">등록하기</button>
     </form>
   </section>
 </template>
@@ -113,4 +113,6 @@ ul.formUI li .required:after{display:inline;content:'*';color:#ff3300;}
 ul.formUI li input + label{display:inline-block;margin-right:10px;}
 ul.formUI li input[type='text'],
 ul.formUI li input[type='password']{padding:0 5px;width:200px;height:30px;}
+ul.formUI li textarea{width:100%;min-height:300px;}
+.btn{display:inline-block;padding:0 15px;font-size:14px;line-height:30px;background:#eee;border:0px none;border-radius:5px;}
 </style>
