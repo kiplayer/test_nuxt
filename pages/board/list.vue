@@ -7,7 +7,7 @@
         Loading ...
       </div>
       <div v-else>
-        <div v-if="listParams.keyword != ''" class="filter">
+        <div class="boardFilter" v-if="listParams.keyword != ''">
           '{{ listParams.keyword }}' 검색결과
         </div>
         <BoardList v-bind="listData" />
@@ -106,5 +106,6 @@ export default {
 .container{margin:0 auto;width:800px;}
 .boardWrap h2{margin:0 0 20px;}
 .boardWrap .boardListBtn{margin-top:10px;text-align:right;}
+.boardWrap .boardFilter{margin-bottom:10px;}
 .btn{display:inline-block;padding:0 15px;font-size:14px;line-height:30px;background:#eee;border:0px none;border-radius:5px;}
 </style>
