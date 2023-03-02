@@ -69,7 +69,7 @@ export default {
 
       let passwordRole = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]{8,20}/;
       if(!passwordRole.test(this.form.inputPw)) {
-          alert('비밀번호는 영문, 숫자 조합만 사용 가능하며 8자 이상이어야 합니다.');
+        alert('비밀번호는 영문, 숫자 조합만 사용 가능하며 8자 이상이어야 합니다.');
         document.getElementById('inputPw').focus();
         return ;
           return ;

@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-.boardList{display:block;list-style:none;border:1px #ccc solid;border-bottom:0px none;}
+.boardList{display:block;list-style:none;border-top:1px #ccc solid;}
 .boardList > li{display:block;list-style:none;margin:0;padding:0;border-bottom:1px #ccc solid;}
 .boardList a{display:block;text-decoration:none;}
 </style>

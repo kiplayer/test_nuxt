@@ -13,9 +13,9 @@
         <div class="content">{{ detailData.content }}</div>
       </div>
       <div class="boardBtn">
-        <nuxt-link :to="{path:'/board/list'}">[목록보기]</nuxt-link>
-        <nuxt-link :to="{path:'/board/write', query:{id:1}}">[수정하기]</nuxt-link>
-        <a @click="doDelete">[삭제하기]</a>
+        <nuxt-link class="btn" :to="{path:'/board/list'}">목록보기</nuxt-link>
+        <nuxt-link class="btn" :to="{path:'/board/write', query:{id:1}}">수정하기</nuxt-link>
+        <a class="btn" @click="doDelete">삭제하기</a>
       </div>
     </div>
   </section>
@@ -83,4 +83,6 @@ export default {
 .boardDetail .title b{display:block;font-size:17px;}
 .boardDetail .title .date{display:block;font-size:12px;text-align:right;}
 .boardDetail .content{display:block;padding:20px 0 40px;min-height:400px;}
+.boardBtn{margin-top:10px;text-align:right;}
+.btn{display:inline-block;padding:0 15px;font-size:14px;line-height:30px;background:#eee;border:0px none;border-radius:5px;text-decoration:none;}
 </style>

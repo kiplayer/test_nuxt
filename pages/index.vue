@@ -26,7 +26,8 @@ export default {
 
 <style>
 .container{margin:0 auto;width:800px;flex-direction: column;}
-a{display:block;}
+a{display:block;color:#000;text-decoration:none;}
+a,button,input[type='button'],input[type='submit']{cursor:pointer;}
 /* .container {
   min-height: 100vh;
   display: flex;

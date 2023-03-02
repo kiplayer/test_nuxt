@@ -13,7 +13,8 @@
         <BoardList v-bind="listData" />
       </div>
       <div class="boardListBtn">
-        <nuxt-link :to="{path:'/board/write'}">[글쓰기]</nuxt-link>
+        <nuxt-link class="btn" :to="{path:'/board/write'}">글쓰기</nuxt-link>
+        <button class="btn" v-on:click="doListAdd">목록추가</button>
       </div>
     </div>
   </section>
@@ -79,12 +80,30 @@ export default {
     doKeyword: function(value) {
       this.listParams.keyword = value;
       this.getList();
-    }
+    },
+    doListAdd: function(value) {
+      this.listData = {
+        ...this.listData,
+        list:[
+          ...this.listData.list,
+          {no:6, title:'제목6', content:'본문6', date:'2023.03.02'},
+          {no:7, title:'제목7', content:'본문7', date:'2023.03.02'},
+          {no:8, title:'제목8', content:'본문8', date:'2023.03.02'},
+          {no:9, title:'제목9', content:'본문9', date:'2023.03.02'},
+          {no:10, title:'제목10', content:'본문10', date:'2023.03.02'},
+        ],
+        page:2,
+        count:10,
+      };
+      console.log(this.listData);
+    },
   },
 };
 </script>
 
-<style scoped>
+<style>
 .container{margin:0 auto;width:800px;}
 .boardWrap h2{margin:0 0 20px;}
+.boardWrap .boardListBtn{margin-top:10px;text-align:right;}
+.btn{display:inline-block;padding:0 15px;font-size:14px;line-height:30px;background:#eee;border:0px none;border-radius:5px;}
 </style>
