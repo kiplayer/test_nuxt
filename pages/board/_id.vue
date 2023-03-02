@@ -14,6 +14,8 @@
       </div>
       <div class="boardBtn">
         <nuxt-link :to="{path:'/board/list'}">[목록보기]</nuxt-link>
+        <nuxt-link :to="{path:'/board/write', query:{id:1}}">[수정하기]</nuxt-link>
+        <a @click="doDelete">[삭제하기]</a>
       </div>
     </div>
   </section>
@@ -63,12 +65,18 @@ export default {
         date:'2023.03.02'
       };
       console.log(this.detailData);
-    }
+    },
+    doDelete: function() {
+      if(confirm("삭제하시겠습니까?")){
+        alert("삭제되었습니다.");
+        this.$router.push('/board/list')
+      }
+    },
   },
 };
 </script>
 
-<style>
+<style scoped>
 .container{margin:0 auto;width:800px;}
 .boardDetail{display:block;}
 .boardDetail .title{display:block;padding:10px 0;border-bottom:1px #ccc solid;}

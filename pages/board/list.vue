@@ -12,6 +12,9 @@
         </div>
         <BoardList v-bind="listData" />
       </div>
+      <div class="boardListBtn">
+        <nuxt-link :to="{path:'/board/write'}">[글쓰기]</nuxt-link>
+      </div>
     </div>
   </section>
 </template>
@@ -81,7 +84,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container{margin:0 auto;width:800px;}
 .boardWrap h2{margin:0 0 20px;}
 </style>

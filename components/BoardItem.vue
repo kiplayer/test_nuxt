@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .boardItem{display:block;padding:10px;}
 .boardItem .title{display:block;margin-bottom:10px;font-size:17px;}
 .boardItem .content{display:block;margin-bottom:10px;}

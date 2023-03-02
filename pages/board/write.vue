@@ -85,7 +85,15 @@ export default {
         return ;
       }
       if(this.form.inputName == ''){
-        alert('휴대폰번호를 입력해주세요.');
+        alert('작성자명을 입력해주세요.');
+        return ;
+      }
+      if(this.form.inputTitle == ''){
+        alert('제목을 입력해주세요.');
+        return ;
+      }
+      if(this.form.inputContent == ''){
+        alert('내용을 입력해주세요.');
         return ;
       }
 
@@ -96,7 +104,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container{margin:0 auto;width:800px;flex-direction: column;}
 ul.formUI{display:block;}
 ul.formUI li{display:block;margin:10px 0;list-style:none;}

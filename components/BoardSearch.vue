@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .boardSearch{margin-bottom:20px;text-align:right;}
 .boardSearch input,
 .boardSearch button{height:30px;}

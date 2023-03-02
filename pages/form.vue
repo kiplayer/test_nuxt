@@ -119,7 +119,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container{margin:0 auto;width:800px;flex-direction: column;}
 ul.formUI{display:block;}
 ul.formUI li{display:block;margin:10px 0;list-style:none;}
