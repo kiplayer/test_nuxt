@@ -5,6 +5,7 @@
 
       <nuxt-link to="/content">[콘텐츠 화면]</nuxt-link>
       <nuxt-link to="/form">[입력 화면]</nuxt-link>
+      <nuxt-link to="/board/list">[게시판 - 목록 화면]</nuxt-link>
       
       <nuxt-link :to="{path:'/content', query:{id:1}}">[콘텐츠 화면 파라미터1]</nuxt-link>
       <nuxt-link :to="{path:'/content', query:{id:2}}">[콘텐츠 화면 파라미터2]</nuxt-link>
@@ -33,4 +34,6 @@ a{display:block;}
   align-items: center;
   text-align: center;
 } */
+ul{display:block;list-style:none;margin:0;padding:0;}
+ul > li{display:block;list-style:none;margin:0;padding:0;}
 </style>
