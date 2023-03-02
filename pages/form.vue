@@ -74,7 +74,7 @@ export default {
     doSubmit: function() {
       const formData = new FormData();
       for (let [key, value] of Object.entries(this.form)) {
-        formData.append(key, value);
+        formData.append(key, value?value.toString():'');
       }
 
       //Value Check

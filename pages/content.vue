@@ -53,8 +53,8 @@
 </template>
 
 <script>
-import AppLogo from "~/components/AppLogo.vue";
-import sampleDiv from "~/components/sampleDiv.vue";
+import AppLogo from "../../components/AppLogo.vue";
+import sampleDiv from "../../components/sampleDiv.vue";
 export default {
   components: {
     AppLogo,

@@ -6,8 +6,8 @@
   </ul>
 </template>
 
-<script>
-import BoardItem from "~/components/BoardItem.vue";
+<script lang="ts">
+import BoardItem from "./BoardItem.vue";
 export default {
   components: {
     BoardItem,

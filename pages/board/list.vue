@@ -20,9 +20,10 @@
   </section>
 </template>
 
-<script>
-import BoardSearch from "~/components/BoardSearch.vue";
-import BoardList from "~/components/BoardList.vue";
+<script lang="ts">
+import BoardSearch from "../../components/BoardSearch.vue";
+import BoardList from "../../components/BoardList.vue";
+
 export default {
   components: {
     BoardSearch,

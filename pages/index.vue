@@ -14,8 +14,8 @@
   </section>
 </template>
 
-<script>
-import AppLogo from "~/components/AppLogo.vue";
+<script lang="ts">
+import AppLogo from "../components/AppLogo.vue";
 
 export default {
   components: {
