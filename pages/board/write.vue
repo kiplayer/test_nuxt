@@ -5,23 +5,23 @@
       <ul class="formUI">
         <li>
           <label for="inputId" class="required">아이디</label>
-          <input type="text" id="inputId" v-model="form.inputId" placeholder="아이디를 입력해주세요." value="" />
+          <input type="text" id="inputId" v-model="form.inputId" placeholder="아이디를 입력해주세요." />
         </li>
         <li>
           <label for="inputName" class="required">작성자명</label>
-          <input type="text" id="inputName" v-model="form.inputName" placeholder="작성자명을 입력해주세요." value="" />
+          <input type="text" id="inputName" v-model="form.inputName" placeholder="작성자명을 입력해주세요." />
         </li>
         <li>
           <label for="inputPw" class="required">비밀번호</label>
-          <input type="password" id="inputPw" v-model="form.inputPw" placeholder="비밀번호를 입력해주세요." value="" />
+          <input type="password" id="inputPw" v-model="form.inputPw" placeholder="비밀번호를 입력해주세요." />
         </li>
         <li>
           <label for="inputPwRe" class="required">비밀번호 확인</label>
-          <input type="password" id="inputPwRe" v-model="form.inputPwRe" placeholder="비밀번호를 다시 입력해주세요." value="" />
+          <input type="password" id="inputPwRe" v-model="form.inputPwRe" placeholder="비밀번호를 다시 입력해주세요." />
         </li>
         <li>
           <label for="inputTitle" class="required">제목</label>
-          <input type="text" id="inputTitle" v-model="form.inputTitle" placeholder="제목를 입력해주세요." value="" />
+          <input type="text" id="inputTitle" v-model="form.inputTitle" placeholder="제목를 입력해주세요." />
         </li>
         <li>
           <label for="">텍스트박스</label>

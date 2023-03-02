@@ -3,7 +3,7 @@
     <form id="searchForm" @submit.prevent="doSearch">
       <label for="keyword" class="required">키워드 검색</label>
       <!-- required="true" -->
-      <input type="text" id="keyword" placeholder="검색어를 입력해주세요." v-model="keyword" value="" />
+      <input type="text" id="keyword" placeholder="검색어를 입력해주세요." v-model="keyword" />
       <button type="submit">검색</button>
     </form>
   </div>

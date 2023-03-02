@@ -35,9 +35,9 @@
         <dd>dl - dd</dd>
       </dl>
       <form>
-        <input type="text" id="" name="" placeholder="placeholder" value="" />
-        <input type="number" id="" name="" placeholder="placeholder" value="" />
-        <input type="tel" id="" name="" placeholder="placeholder" value="" />
+        <input type="text" id="" name="" placeholder="placeholder" />
+        <input type="number" id="" name="" placeholder="placeholder" />
+        <input type="tel" id="" name="" placeholder="placeholder" />
         <select id="" name="">
           <option value="option">option</option>
           <option value="option">option</option>

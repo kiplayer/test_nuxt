@@ -6,20 +6,20 @@
         <li>
           <label for="inputId" class="required">아이디</label>
           <!-- required="true" -->
-          <input type="text" id="inputId" v-model="form.inputId" placeholder="아이디를 입력해주세요." value="" />
+          <input type="text" id="inputId" v-model="form.inputId" placeholder="아이디를 입력해주세요." />
           Key Event : enter, tab, delete, esc, space, up, down, left, right 
         </li>
         <li>
           <label for="inputPw" class="required">비밀번호</label>
-          <input type="password" id="inputPw" v-model="form.inputPw" placeholder="비밀번호를 입력해주세요." value="" />
+          <input type="password" id="inputPw" v-model="form.inputPw" placeholder="비밀번호를 입력해주세요." />
         </li>
         <li>
           <label for="inputPwRe" class="required">비밀번호 확인</label>
-          <input type="password" id="inputPwRe" v-model="form.inputPwRe" placeholder="비밀번호를 다시 입력해주세요." value="" />
+          <input type="password" id="inputPwRe" v-model="form.inputPwRe" placeholder="비밀번호를 다시 입력해주세요." />
         </li>
         <li>
           <label for="inputTel" class="required">휴대폰번호</label>
-          <input type="text" id="inputTel" v-model="form.inputTel" placeholder="휴대폰번호를 입력해주세요.(- 없이)" value="" />
+          <input type="text" id="inputTel" v-model="form.inputTel" placeholder="휴대폰번호를 입력해주세요.(- 없이)" />
         </li>
         <li>
           <label for="">선택박스</label>
