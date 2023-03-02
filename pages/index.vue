@@ -14,16 +14,6 @@
   </section>
 </template>
 
-<script lang="ts">
-import AppLogo from "../components/AppLogo.vue";
-
-export default {
-  components: {
-    AppLogo,
-  },
-};
-</script>
-
 <style>
 .container{margin:0 auto;width:800px;flex-direction: column;}
 a{display:block;color:#000;text-decoration:none;}

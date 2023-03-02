@@ -4,11 +4,11 @@
     <div>
       <AppLogo />
       <p>Route Query ID : {{ $route.query.id }}</p>
-      <sample-div title="title1" />
-      <sample-div title="title2" />
-      <sample-div title="title3" />
-      <sample-div title="title4" />
-      <sample-div title="title5" />
+      <sampleDiv title="title1" />
+      <sampleDiv title="title2" />
+      <sampleDiv title="title3" />
+      <sampleDiv title="title4" />
+      <sampleDiv title="title5" />
       <div>div div div div div div div div div div div div div div div div div div div div</div>
       <p>p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p</p>
       <span>span span span span span span span span span span span span span span span span</span>
@@ -53,8 +53,8 @@
 </template>
 
 <script>
-import AppLogo from "../../components/AppLogo.vue";
-import sampleDiv from "../../components/sampleDiv.vue";
+import AppLogo from "../components/AppLogo.vue";
+import sampleDiv from "../components/sampleDiv.vue";
 export default {
   components: {
     AppLogo,
