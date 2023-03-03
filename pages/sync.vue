@@ -3,10 +3,11 @@
     <h2>Sync</h2>
     <div>
       <Sync1 @doSync1="doSync1" />
-      {{ syncValue1 }}
-      <Sync2 :data="syncValue1" @doSync2="doSync2" />
+      {{ syncValue }}
+      <Sync2 :data="syncValue" />
       <!-- {{ syncValue2 }} -->
-      <Sync3 />
+      <Sync3 :data.sync="syncValue" @doSync3="doSync3" />
+      <!-- <Sync3 v-bind:doSync3.sync="syncValue" /> -->
     </div>
   </section>
 </template>
@@ -18,9 +19,7 @@ import Sync3 from "../components/Sync3.vue";
 export default {
   data() {
     return {
-      syncValue1:false,
-      syncValue2:false,
-      syncValue3:false,
+      syncValue:false,
     };
   }, 
   components: {
@@ -30,10 +29,10 @@ export default {
   },
   methods: {
     doSync1: function(value) {
-      this.syncValue1 = value;
+      this.syncValue = value;
     },
-    doSync2: function(value) {
-      this.syncValue2 = value;
+    doSync3: function(value) {
+      this.syncValue = value;
     },
   },
 };

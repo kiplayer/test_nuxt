@@ -53,7 +53,7 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   data: function() {
     return {
@@ -80,31 +80,31 @@ export default {
       //Value Check
       if(this.form.inputId == ''){
         alert('아이디를 입력해주세요.');
-        document.getElementById('inputId').focus();
+        document?.getElementById('inputId')?.focus();
         return ;
       }
       let idRole = /^[A-Za-z0-9_-]{6,20}$/;
       if(!idRole.test(this.form.inputId)) {
         alert('아이디는 영문, 숫자, 특수문자(_,-)만 사용 가능하며 6자 이상이어야 합니다.');
-        document.getElementById('inputId').focus();
+        document?.getElementById('inputId')?.focus();
         return ;
       }
 
       let passwordRole = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]{8,20}/;
       if(!passwordRole.test(this.form.inputPw)) {
           alert('비밀번호는 영문, 숫자 조합만 사용 가능하며 8자 이상이어야 합니다.');
-        document.getElementById('inputPw').focus();
+        document?.getElementById('inputPw')?.focus();
         return ;
           return ;
       }
       if(this.form.inputPw == '' && this.form.inputPwRe == ''){
         alert('비밀번호를 입력해주세요.');
-        document.getElementById('inputPw').focus();
+        document?.getElementById('inputPw')?.focus();
         return ;
       }
       if(this.form.inputPw != this.form.inputPwRe){
         alert('비밀번호가 맞지 않습니다. 다시 입력해주세요.');
-        document.getElementById('inputPwRe').focus();
+        document?.getElementById('inputPwRe')?.focus();
         return ;
       }
       if(this.form.inputTel == ''){
