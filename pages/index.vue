@@ -7,7 +7,11 @@
         <li><nuxt-link to="/form">입력 화면</nuxt-link></li>
         <li><nuxt-link to="/board/list">게시판</nuxt-link></li>
         <li><nuxt-link to="/calculator">계산기</nuxt-link></li>
+        <li><nuxt-link to="/tab">탭</nuxt-link></li>
+        <li><nuxt-link to="/table">테이블</nuxt-link></li>
         <li><nuxt-link to="/sync">학습 : Sync</nuxt-link></li>
+        <li><nuxt-link to="/slots">학습 : Slot</nuxt-link></li>
+        <li><nuxt-link to="/vevent">학습 : v-on</nuxt-link></li>
       </ul>
       <ul>
         <li><nuxt-link :to="{path:'/content', query:{id:1}}">콘텐츠 화면 파라미터1</nuxt-link></li>
