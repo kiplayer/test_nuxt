@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 html, body{margin:0;padding:0;}
 #wrap{margin:0 auto;max-width:1200px;}
 #header{position:relative;flex:1;height:80px;}

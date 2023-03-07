@@ -63,7 +63,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container{margin:0 auto;width:800px;}
 p{margin:10px 0;}
 /* li{float:left;} */

@@ -22,7 +22,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 .container{margin:0 auto;width:800px;flex-direction: column;}
 .indexWrap{}
 .indexWrap ul{margin:15px 0;}
