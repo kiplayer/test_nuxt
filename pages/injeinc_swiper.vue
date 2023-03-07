@@ -3,7 +3,7 @@
     <div class="mainVisual">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide-active">
             <div class="inner">
               <div class="slogan">
                 <p>
@@ -30,15 +30,15 @@
                 <a href="/m2/sub4.asp">View more</a>
               </div>
               <div class="visualImg visualImg03">
-                <img class="pcImg" src="https://injeinc.co.kr/images/main/mainVisual02.png" alt="구름">
-                <img class="mImg" src="https://injeinc.co.kr/images/main/mainVisual02_mobile.png" alt="구름">
+                <img class="pcImg" src="images/main/mainVisual02.png" alt="구름">
+                <img class="mImg" src="images/main/mainVisual02_mobile.png" alt="구름">
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="scrollIcon">
-        <img src="https://injeinc.co.kr/images/main/scrollIcon.png" alt="스크롤아이콘">
+        <img src="images/main/scrollIcon.png" alt="스크롤아이콘">
       </div>
       <div class="inner">
         <div class="swiper-pagination"></div>
@@ -48,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="section section01 animate">
+    <div class="section section01 animate on active">
       <div class="inner">
         <p class="secTitle animate fadeUp">
           Service
@@ -103,7 +103,7 @@
           </li>
         </ul>
         <div class="sec01Imgwrap sec01Img">
-          <img src="https://injeinc.co.kr/images/main/Union.png" alt="">
+          <img src="images/main/Union.png" alt="">
         </div>
         <div class="sec01Imgwrap2 sec01Img"></div>
         <div class="sec01Imgwrap3 sec01Img"></div>
@@ -112,7 +112,7 @@
         <div class="sec01Imgwrap6 sec01Img"></div>
       </div>
     </div>
-    <div class="section section02 animate">
+    <div class="section section02 animate on active">
       <div class="inner">
         <p class="secTitle animate fadeUp">
           Solutions
@@ -128,7 +128,7 @@
               </p>
               <span class="imgBox">
                 <span class="Icon">View more</span>
-                <img src="https://injeinc.co.kr/images/main/sec02Ion04.png" alt="CONE-Plus 이미지">
+                <img src="images/main/sec02Ion04.png" alt="CONE-Plus 이미지">
               </span>
             </a>
           </li>
@@ -141,7 +141,7 @@
               </p>
               <span class="imgBox">
                 <span class="Icon">View more</span>
-                <img src="https://injeinc.co.kr/images/main/sec02Ion05.png" alt="CONE-DevOps 이미지">
+                <img src="images/main/sec02Ion05.png" alt="CONE-DevOps 이미지">
               </span>
             </a>
           </li>
@@ -154,14 +154,14 @@
               </p>
               <span class="imgBox">
                 <span class="Icon">View more</span>
-                <img src="https://injeinc.co.kr/images/main/sec02Ion06.png" alt="CONE-IDE 이미지">
+                <img src="images/main/sec02Ion06.png" alt="CONE-IDE 이미지">
               </span>
             </a>
           </li>
         </ul>
       </div>
     </div>
-    <div class="section section03" >
+    <div class="section section03 active" >
       <div class="inner">
         <p class="secTitle animate fadeUp">
           Cloud 동향 및 소식
@@ -173,57 +173,61 @@
               <li ><a href="/index.asp?gubun=01#none">소식</a></li>
           </ul>
           <div class="tabPage">
-            <swiper :modules="modules" :pagination="{ clickable: true }">
-              <swiper-slide>
-                <a href="/m3/sub1_view.asp?sn=12&gubun=">
-                  <div class="imgWrap">
-                    <img src="http://injeinc.co.kr/board_upload/tb_photo/photo/2022_08_08_cjcOmMxYLB.gif" alt="Cloud 동향 및 소식">
+            <div class="bannerSlide bannerSlide1">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide-active">
+                    <a href="/m3/sub1_view.asp?sn=12&gubun=">
+                      <div class="imgWrap">
+                        <img src="http://injeinc.co.kr/board_upload/tb_photo/photo/2022_08_08_cjcOmMxYLB.gif" alt="Cloud 동향 및 소식">
+                      </div>
+                      <dl>
+                        <dt>동향</dt>
+                        <dd>한국IDC - 국내 퍼블릭 클라우드 시장 연평균 14.8% 성장 전망</dd>
+                        <dd class="date">2022.08.08</dd>
+                      </dl>
+                    </a>
                   </div>
-                  <dl>
-                    <dt>동향</dt>
-                    <dd>한국IDC - 국내 퍼블릭 클라우드 시장 연평균 14.8% 성장 전망</dd>
-                    <dd class="date">2022.08.08</dd>
-                  </dl>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-                <a href="/m3/sub1_view.asp?sn=11&gubun=">
-                  <div class="imgWrap">
-                    <img src="http://injeinc.co.kr/board_upload/tb_photo/photo/2022_08_05_PVlhyqtgCu.gif" alt="Cloud 동향 및 소식">
+                  <div class="swiper-slide">
+                    <a href="/m3/sub1_view.asp?sn=11&gubun=">
+                      <div class="imgWrap">
+                        <img src="http://injeinc.co.kr/board_upload/tb_photo/photo/2022_08_05_PVlhyqtgCu.gif" alt="Cloud 동향 및 소식">
+                      </div>
+                      <dl>
+                        <dt>동향</dt>
+                        <dd>금융 클라우드, 선택 아닌 필수…국내도 대비해야</dd>
+                        <dd class="date">2022.08.05</dd>
+                      </dl>
+                    </a>
                   </div>
-                  <dl>
-                    <dt>동향</dt>
-                    <dd>금융 클라우드, 선택 아닌 필수…국내도 대비해야</dd>
-                    <dd class="date">2022.08.05</dd>
-                  </dl>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-                <a href="/m3/sub1_view.asp?sn=12&gubun=">
-                  <div class="imgWrap">
-                    <img src="http://injeinc.co.kr/board_upload/tb_photo/photo/2022_08_08_cjcOmMxYLB.gif" alt="Cloud 동향 및 소식">
+                  <div class="swiper-slide">
+                    <a href="/m3/sub1_view.asp?sn=12&gubun=">
+                      <div class="imgWrap">
+                        <img src="http://injeinc.co.kr/board_upload/tb_photo/photo/2022_08_08_cjcOmMxYLB.gif" alt="Cloud 동향 및 소식">
+                      </div>
+                      <dl>
+                        <dt>동향</dt>
+                        <dd>한국IDC - 국내 퍼블릭 클라우드 시장 연평균 14.8% 성장 전망</dd>
+                        <dd class="date">2022.08.08</dd>
+                      </dl>
+                    </a>
                   </div>
-                  <dl>
-                    <dt>동향</dt>
-                    <dd>한국IDC - 국내 퍼블릭 클라우드 시장 연평균 14.8% 성장 전망</dd>
-                    <dd class="date">2022.08.08</dd>
-                  </dl>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-                <a href="/m3/sub1_view.asp?sn=10&gubun=">
-                  <div class="imgWrap">
-                    <img src="http://injeinc.co.kr/board_upload/tb_photo/photo/2022_07_20_TkyLGJpiNU.gif" alt="Cloud 동향 및 소식">
+                  <div class="swiper-slide">
+                    <a href="/m3/sub1_view.asp?sn=10&gubun=">
+                      <div class="imgWrap">
+                        <img src="http://injeinc.co.kr/board_upload/tb_photo/photo/2022_07_20_TkyLGJpiNU.gif" alt="Cloud 동향 및 소식">
+                      </div>
+                      <dl>
+                        <dt>동향</dt>
+                        <dd>글로벌 클라우드 시장, 2028년 1조4600억 달러 규모 전망</dd>
+                        <dd class="date">2022.07.20</dd>
+                      </dl>
+                    </a>
                   </div>
-                  <dl>
-                    <dt>동향</dt>
-                    <dd>글로벌 클라우드 시장, 2028년 1조4600억 달러 규모 전망</dd>
-                    <dd class="date">2022.07.20</dd>
-                  </dl>
-                </a>
-              </swiper-slide>
-            </swiper>
-            <a href="/m3/sub1.asp" class="moreBtn"><img src="https://injeinc.co.kr/images/main/plus.png" alt="더보기"></a>
+                </div>
+              </div>
+            </div>
+            <a href="/m3/sub1.asp" class="moreBtn"><img src="images/main/plus.png" alt="더보기"></a>
           </div>
         </div>
       </div>
@@ -236,7 +240,7 @@
         </p>
         <div class="callBanner">
           <div class="left">
-            <img src="https://injeinc.co.kr/images/main/callIcon.png" alt="전화기모양">
+            <img src="images/main/callIcon.png" alt="전화기모양">
             <p>
               <strong>대표전화</strong><br>
               고객 센터 운영 시간 종료 후 기술 문의는 1:1 문의를 이용해 주세요.
@@ -295,20 +299,46 @@
         </ul>
       </div>
     </div>
-    <!-- <script src="/js/swiper.min.js"></script> -->
   </section>
 </template>
 
 <script>
+import {Swiper, Navigation, Pagination, Zoom} from 'swiper'
+Swiper.use([Navigation, Pagination, Zoom])
+import swiperCss from '../static/js/swiper.min.css'
+
 export default {
   layout: 'injeinc',
-  mounted: function () {
-
+  components: {
+    Swiper,
+  },
+  mounted() {
+    new Swiper(document.getElementsByClassName('swiper-container')[0], {
+			loop:false,
+      slidesPerView: 1,
+      effect : 'fade',
+			spaceBetween:0,
+			autoplay : {
+			  delay : 8000,
+			},
+      pagination: {
+				el: ".mainVisual .swiper-pagination",
+				type: 'bullets',
+        clickable: true,
+      },
+    });
+    new Swiper(document.getElementsByClassName('swiper-container')[1], {
+			centeredSlides:false,
+			CenteredSlidesBounds:true,
+			slidesPerView: 3,
+			spaceBetween:18,
+      scrollbar: { el: '.slide-scroll1' },
+    });
   }
 };
 </script>
 
-<style scoped>
+<style>
 .mainVisual{position:relative; width:100%; height:570px;}
 .mainVisual .scrollIcon{position:absolute; left:50%; bottom:-120px; z-index:99; animation:text-active-animationY  0.8s infinite alternate;}
 
@@ -386,7 +416,7 @@ export default {
 .secTitle{width:100%; font-size:50px; font-weight:bold; text-align:Center;}
 .secTitle span{display:block; font-size:24px; padding-top:12px; text-align:center; font-weight:300;}
 .section01{width:100%; height:1080px; padding-top:120px; }
-.section01 .sec01List{position:relative; width:100%; height:888px; padding-top:60px;  background:url(https://injeinc.co.kr/images/main/center.png) center no-repeat;}
+.section01 .sec01List{position:relative; width:100%; height:888px; padding-top:60px;  background:url(http://injeinc.co.kr/images/main/center.png) center no-repeat;}
 .section01 .sec01List li{position:relative; width:370px; height:270px;  float:left; border:5px solid transparent; background-image:linear-gradient(#fff, #fff),linear-gradient(0deg, #00D2AD 0%, #47B6F5 100%);background-origin: border-box; background-clip: content-box, border-box; border-radius: 0 0 55px; opacity:0; filter:alpha(opacity=0); }
 .section01 .sec01Imgwrap{width:147px; height:150px; border-radius:120px; transform: rotate(0deg); transition:1s; opacity:0; animation:animation-color 1.5s infinite  alternate-reverse;}
 .section01 .sec01Imgwrap img{display:block; margin:35px auto;}
@@ -458,9 +488,9 @@ export default {
 .section02 .sec02List li.type2 > a{ border:3px solid #F494D1; }
 .section02 .sec02List li.type3 > a{ border:3px solid #2DC18E; }
 .section02 .sec02List li .title{ display:block; margin-bottom:15px; padding-left:85px; height:73px; line-height:73px; font-size:28px; font-weight:bold; }
-.section02 .sec02List li.type1 .title{ background:url(/images/main/sec02Ion01.png) no-repeat left center; }
-.section02 .sec02List li.type2 .title{ background:url(/images/main/sec02Ion02.png) no-repeat left center; }
-.section02 .sec02List li.type3 .title{ background:url(/images/main/sec02Ion03.png) no-repeat left center; }
+.section02 .sec02List li.type1 .title{ background:url(http://injeinc.co.kr/images/main/sec02Ion01.png) no-repeat left center; }
+.section02 .sec02List li.type2 .title{ background:url(http://injeinc.co.kr/images/main/sec02Ion02.png) no-repeat left center; }
+.section02 .sec02List li.type3 .title{ background:url(http://injeinc.co.kr/images/main/sec02Ion03.png) no-repeat left center; }
 .section02 .sec02List li p.txt{ margin-bottom:30px; font-size:18px; font-weight:500; color:#333;}
 .section02 .sec02List li .imgBox{position:relative; display:block; border-radius:20px; overflow:hidden; }
 .section02 .sec02List li .imgBox span.Icon{font-size:0px; position:absolute; z-index:11; left:50%; top:50%; transform:translate(-50%,-50%); width:145px; height:145px; background:url("http://injeinc.co.kr/images/main/sec02Icon01.png") center no-repeat;}
